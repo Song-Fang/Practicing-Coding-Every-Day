@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-public class graph {
+public class Graph {
 //Test
 	public static void main(String[] args) {
 		GraphSolution gs = new GraphSolution();
