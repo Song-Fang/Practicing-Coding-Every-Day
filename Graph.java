@@ -11,9 +11,9 @@ public class Graph {
 //Test
 	public static void main(String[] args) {
 		GraphSolution gs = new GraphSolution();
-		int[][] edges = { { 0, 1 }, { 0, 2 }, { 0, 3 }, { 1, 4 } };
-		int n = 5;
-		Boolean result = gs.validTree(n, edges);
+		int[][] edges1 = { { 0, 1 }, { 0, 2 }, { 0, 3 }, { 1, 4 } };
+		int n1 = 5;
+		Boolean result = gs.validTree(n1, edges1);
 		System.out.println(result);
 		int[][] edges2 = { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 1, 3 }, { 1, 4 } };
 		int n2 = 5;
