@@ -7,7 +7,6 @@ public class CoinChange {
 		System.out.println(ccs.coinChange(4,coins));
 	}
 }
-
 class CoinChangeSolution{
 	public int coinChange(int amount, int [] coins) {
 		if(coins==null||coins.length==0) {
