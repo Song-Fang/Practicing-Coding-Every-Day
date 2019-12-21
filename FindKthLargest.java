@@ -27,7 +27,7 @@ class findKthLargestSolution1 {
 }
 
 class findKthElementSolution2{
-	public int findLargestElement(int [] nums,int k) {
+	public int findKthLargestElement(int [] nums,int k) {
 		if (nums == null || nums.length == 0) {
 			return -1;
 		}
@@ -37,22 +37,22 @@ class findKthElementSolution2{
 }
 
 class findKthElementSolution3{
-	public int findLargestElement(int [] nums,int k) {
+	public int findKthLargestElement(int [] nums,int k) {
 		if (nums == null || nums.length == 0) {
 			return -1;
 		}
-		return nums[findLargestElement(nums,k,0,nums.length-1)];
+		return nums[findKthLargestElement(nums,k,0,nums.length-1)];
 	}
 	
-	private int findLargestElement(int [] nums,int k,int start,int end) {
+	private int findKthLargestElement(int [] nums,int k,int start,int end) {
 		int pivot = partition(nums,start,end);
 		int rank = end-pivot+1;
 		if(rank ==k) {
 			return pivot;
 		}else if(rank<k) {
-			return findLargestElement(nums,k-pivot,start,pivot-1);
+			return findKthLargestElement(nums,k-pivot,start,pivot-1);
 		}else {
-			return findLargestElement(nums,k,pivot+1,end);
+			return findKthLargestElement(nums,k,pivot+1,end);
 		}
 	}
 	private int partition(int [] nums,int start,int end) {
